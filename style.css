@@ -570,3 +570,113 @@ section {
         display: flex;
     }
 }
+/* ==========================================================
+   Дополнительная улучшенная адаптивность для смартфонов
+   ========================================================== */
+
+@media (max-width: 768px) {
+    /* Общие отступы секций */
+    section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .section-subtitle {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    /* Главный экран (Hero) */
+    .hero {
+        padding: 130px 0 60px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Карточки услуг и прайсы */
+    .service-category {
+        padding: 20px;
+    }
+
+    .service-category h3 {
+        font-size: 18px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .price-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+
+    .service-price {
+        font-size: 16px;
+        color: var(--primary);
+    }
+
+    /* FAQ */
+    .faq-question {
+        padding: 15px 20px;
+        font-size: 16px;
+    }
+
+    .faq-answer {
+        font-size: 14px;
+    }
+
+    /* Футер */
+    .footer-content h2 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .badge {
+        font-size: 12px;
+    }
+
+    /* Компактные кнопки переключения вкладок */
+    .tab-btn {
+        padding: 12px 16px;
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .tabs-switcher {
+        gap: 10px;
+    }
+}
