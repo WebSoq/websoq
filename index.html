@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSoq — Веб-разработка и Telegram-боты</title>
+    <!-- Подключение стилей CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Подключение шрифтов -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">WebSoq<span>.</span></div>
+            <nav class="nav">
+                <a href="#about">О нас</a>
+                <a href="#advantages">Преимущества</a>
+                <a href="#services" class="active-nav">Услуги и Цены</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact" class="btn-small">Связаться</a>
+            </nav>
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Главный экран (Hero) -->
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge">Профессиональная разработка 2026</span>
+                <h1>Создаем современные сайты и умные Telegram-боты</h1>
+                <p>Приветствуем! Мы делаем сайты с нуля, разрабатываем ботов легкой и средней сложности, а также аккуратно правим чужой код. Быстро, понятно и с душой :3</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary">Выбрать направление</a>
+                    <a href="#about" class="btn btn-outline">Узнать больше</a>
+                </div>
+            </div>
+            <div class="hero-card">
+                <div class="code-preview">
+                    <div class="code-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="code-title">ecosystem.js</span>
+                    </div>
+                    <pre><code><span class="keyword">const</span> <span class="variable">WebSoq</span> = {
+    <span class="property">sites</span>: <span class="string">"HTML/CSS/JS & Tilda"</span>,
+    <span class="property">bots</span>: <span class="string">"Telegram Automation"</span>,
+    <span class="property">codeQuality</span>: <span class="keyword">true</span>,
+    <span class="property">status</span>: <span class="string">"Ready to work :3"</span>
+};</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- О нас -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">О нашей команде</h2>
+            <p class="section-subtitle">Дипломы получены в 2025–2026 годах от IT-занятий impact.</p>
+            
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">🎓</div>
+                    <h3>Профильное образование</h3>
+                    <p>Имеем дипломы связанные с веб-базой (HTML, CSS, JS) и современными технологиями разработки(Python).</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">💻</div>
+                    <h3>Эксперты в сайтах</h3>
+                    <p>Пишем чистый, адаптивный код с нуля или собираем быстрые и конверсионные проекты на конструкторах.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">🤖</div>
+                    <h3>Разработка ботов</h3>
+                    <p>Проектируем логику ботов для приема заявок и удобной связи с клиентами.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section class="advantages" id="advantages">
+        <div class="container">
+            <h2 class="section-title">Наши преимущества</h2>
+            <div class="adv-grid">
+                <div class="adv-item">
+                    <span class="adv-num">01</span>
+                    <h3>Четкое разделение</h3>
+                    <p>Никакой путаницы: каждый проект структурирован, логика отделена, всё работает как швейцарские часы.</p>
+                </div>
+                <div class="adv-item">
+                    <span class="adv-num">02</span>
+                    <h3>Умные подсказки в коде</h3>
+                    <p>Оставляем понятные комментарии, чтобы любой другой специалист легко разобрался в проекте при необходимости :3</p>
+                </div>
+                <div class="adv-item">
+                    <span class="adv-num">03</span>
+                    <h3>Полная адаптивность</h3>
+                    <p>Сайты идеально смотрятся на смартфонах, планшетах и компьютерах, а боты — интуитивно понятны в управлении.</p>
+                </div>
+                <div class="adv-item">
+                    <span class="adv-num">04</span>
+                    <h3>Связка «Сайт + Бот»</h3>
+                    <p>Умеем мгновенно перенаправлять заявки с веб-формы напрямую в ваш Telegram-бот для быстрой обработки.</p>
+                </div>
+                <div class="adv-item">
+                    <span class="adv-num">05</span>
+                    <h3>Помощь с деплоем</h3>
+                    <p>Подсказываем и бесплатно помогаем настроить бесплатный хостинг для сайта и сервер для бота, чтобы вы не переплачивали лишнего :3.</p>
+                </div>
+                <div class="adv-item">
+                    <span class="adv-num">06</span>
+                    <h3>Честные сроки и скидки</h3>
+                    <p>Сроки от 10 минут до 5 дней. Задержали по своей вине — делаем скидку 30% в качестве компенсации :3</p>
+                </div>
+            </div>
+
+            <!-- Минусы -->
+            <div class="minuses-box">
+                <h3>⚠️ Честно о наших минусах</h3>
+                <p>Мы не предоставляем платный хостинг и домены сами — мы передаем вам полностью готовые файлы или настроенный проект, помогая бесплатно разместить его на доступных облачных платформах.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Услуги и Цены с вкладками -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Наши услуги и цены</h2>
+            <p class="section-subtitle">Выберите интересующее направление, чтобы посмотреть подробный прайс</p>
+
+            <!-- Переключатель вкладок -->
+            <div class="tabs-switcher">
+                <button class="tab-btn active" data-tab="sites">🌐 Веб-разработка и сайты</button>
+                <button class="tab-btn" data-tab="bots">🤖 Telegram-боты</button>
+            </div>
+
+            <!-- Содержимое вкладки 1: Сайты -->
+            <div class="tab-content active" id="tab-sites">
+                <div class="services-wrapper">
+                    <div class="service-category">
+                        <h3>Правка готовых сайтов <span class="tag-cheap">Быстро</span></h3>
+                        <div class="price-list">
+                            <div class="price-item">
+                                <span class="service-name">Замена текста</span>
+                                <span class="service-price">от 150 до 350 руб.</span>
+                            </div>
+                            <div class="price-item">
+                                <span class="service-name">Замена картинки / графики</span>
+                                <span class="service-price">от 150 до 600 руб.</span>
+                            </div>
+                            <div class="price-item">
+                                <span class="service-name">Коррекция логики / элементов</span>
+                                <span class="service-price">от 300 до 3,500 руб.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-category highlight">
+                        <h3>Создание сайтов с нуля</h3>
+                        <div class="price-list">
+                            <div class="price-item">
+                                <span class="service-name">Базовый HTML-сайт</span>
+                                <span class="service-price">от 300 руб.</span>
+                            </div>
+                            <div class="price-item">
+                                <span class="service-name">Добавление CSS оформления</span>
+                                <span class="service-price">+ от 500 до 1,500 руб.</span>
+                            </div>
+                            <div class="price-item">
+                                <span class="service-name">Добавление JS анимаций</span>
+                                <span class="service-price">+ от 800 до 2,500 руб.</span>
+                            </div>
+                            <div class="price-item">
+                                <span class="service-name">Интеграция заявок с ботом</span>
+                                <span class="service-price">+ 500 руб.</span>
+                            </div>
+                            <div class="price-item">
+                                <span class="service-name">Разработка сайта на Tilda</span>
+                                <span class="service-price">от 800 до 2,500 руб.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Содержимое вкладки 2: Бот -->
+            <div class="tab-content" id="tab-bots">
+                <div class="services-wrapper single-col">
+                    <div class="service-category highlight">
+                        <h3>Разработка Telegram-ботов</h3>
+                        <div class="price-list">
+                            <div class="price-item">
+                                <span class="service-name">Простой бот-автоответчик / визитка</span>
+                                <span class="service-price">от 600 до 1,200 руб.</span>
+                            </div>
+                            <div class="price-item">
+                                <span class="service-name">Бот для сбора заявок и обратной связи</span>
+                                <span class="service-price">от 1,000 до 2,200 руб.</span>
+                            </div>
+                            <div class="price-item">
+                                <span class="service-name">Многофункциональный бот с каталогом / базой</span>
+                                <span class="service-price">от 2,000 до 4,000 руб.</span>
+                            </div>
+                            <div class="price-item">
+                                <span class="service-name">Интеграция бота со сторонними сервисами / сайтом</span>
+                                <span class="service-price">+ от 800 руб.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FAQ (Вопросы и ответы) -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title">Часто задаваемые вопросы (FAQ)</h2>
+            <p class="section-subtitle">Отвечаем на популярные вопросы о нашей работе</p>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Как происходит разработка Telegram-ботов?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Мы обсуждаем ТЗ и сценарии, пишем надежный код, настраиваем хостинг и выдаем вам готового бота со всеми инструкциями! :3</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>К какому боту привязываются заявки с сайта?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Мы можем привязать форму обратной связи на вашем сайте прямо к вашему телеграм-боту, чтобы уведомления мгновенно падали в чат.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Возможен ли возврат средств?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>После выполнения работы возврат не предусмотрен. Но мы всегда открыты к правкам и доработкам в рамках изначального ТЗ!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Можем ли мы увидеть ваши дипломы?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да! Предоставим всю информацию и подтверждения в личных сообщениях.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты / Футер -->
+    <footer class="footer" id="contact">
+        <div class="container footer-content">
+            <h2>Готовы обсудить проект?</h2>
+            <p>Напишите нам в Telegram прямо сейчас, и мы подберем идеальное решение под вашу задачу!</p>
+            <a href="https://t.me/WebITCreate_bot" class="btn btn-primary" target="_blank">Связаться в Telegram</a>
+            <p class="copyright">© 2026 WebSoq. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Подключение скрипта JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
